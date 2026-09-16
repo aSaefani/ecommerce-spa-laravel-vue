@@ -12,7 +12,7 @@
     </div>
 
     <div v-else class="grid md:grid-cols-4 gap-4">
-      <div v-for="item in items" :key="item.id" class="card hover:shadow-lg transition-shadow">
+      <div v-for="item in items" :key="item.id" class="card hover:shadow-2xl hover:-translate-y-2 hover:bg-white/55 dark:hover:bg-slate-800/55 transition-all">
         <div class="h-48 bg-slate-200 dark:bg-slate-700 rounded-lg mb-4">
           <img v-if="item.product.image" :src="`/storage/${item.product.image}`" :alt="item.product.name" class="w-full h-full object-cover rounded-lg" />
         </div>

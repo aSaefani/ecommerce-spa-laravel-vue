@@ -12,7 +12,7 @@
     </div>
 
     <div v-else class="space-y-4">
-      <div v-for="order in orders" :key="order.id" class="card">
+      <div v-for="order in orders" :key="order.id" class="card hover:bg-white/55 dark:hover:bg-slate-800/55 hover:shadow-xl">
         <div class="flex justify-between items-start mb-4">
           <div>
             <h3 class="font-bold text-lg">{{ order.order_number }}</h3>

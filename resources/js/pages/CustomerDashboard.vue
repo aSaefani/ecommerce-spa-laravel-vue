@@ -9,7 +9,7 @@
     </div>
 
     <div v-if="loading" class="grid gap-4 md:grid-cols-3">
-      <div v-for="index in 3" :key="index" class="card h-32 animate-pulse bg-slate-200 dark:bg-slate-700"></div>
+      <div v-for="index in 3" :key="index" class="card h-32 animate-pulse bg-white/20 dark:bg-slate-700/20"></div>
     </div>
 
     <template v-else>
@@ -38,7 +38,7 @@
         </div>
         <div v-if="!data.recentOrders.length" class="py-8 text-center text-slate-500">Belum ada pesanan.</div>
         <div v-else class="space-y-3">
-          <div v-for="order in data.recentOrders" :key="order.id" class="flex flex-col gap-3 rounded-lg border border-slate-200 p-4 dark:border-slate-700 sm:flex-row sm:items-center sm:justify-between">
+          <div v-for="order in data.recentOrders" :key="order.id" class="glass hover:bg-white/50 dark:hover:bg-slate-800/50 flex flex-col gap-3 rounded-xl border border-white/30 p-4 dark:border-slate-700/50 sm:flex-row sm:items-center sm:justify-between transition-colors">
             <div>
               <p class="font-semibold">{{ order.order_number }}</p>
               <p class="text-sm text-slate-500">{{ date(order.created_at) }}</p>

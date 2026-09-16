@@ -9,8 +9,13 @@ import AdminDashboard from '@/pages/AdminDashboard.vue'
 import CustomerDashboard from '@/pages/CustomerDashboard.vue'
 import Checkout from '@/pages/Checkout.vue'
 
+import Login from '@/pages/Login.vue'
+import Register from '@/pages/Register.vue'
+
 const routes = [
   { path: '/', component: Home, name: 'home' },
+  { path: '/login', component: Login, name: 'login', meta: { guest: true } },
+  { path: '/register', component: Register, name: 'register', meta: { guest: true } },
   { path: '/products', component: Products, name: 'products' },
   { path: '/dashboard', component: CustomerDashboard, name: 'dashboard', meta: { requiresAuth: true } },
   { path: '/checkout', component: Checkout, name: 'checkout', meta: { requiresAuth: true } },

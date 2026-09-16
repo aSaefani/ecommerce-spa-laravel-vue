@@ -13,15 +13,15 @@
 
     <!-- Metrics -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="card border-l-4 border-amber-500">
+      <div class="card glass-heavy border-l-4 border-amber-500 hover:-translate-y-1 hover:shadow-xl">
         <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Menunggu Pembayaran</p>
         <p class="text-3xl font-bold mt-2 text-amber-600">{{ stats.pendingOrders }}</p>
       </div>
-      <div class="card border-l-4 border-blue-500">
+      <div class="card glass-heavy border-l-4 border-blue-500 hover:-translate-y-1 hover:shadow-xl">
         <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Total Pesanan Hari Ini</p>
         <p class="text-3xl font-bold mt-2 text-blue-600">{{ stats.todayOrders }}</p>
       </div>
-      <div class="card border-l-4 border-emerald-500">
+      <div class="card glass-heavy border-l-4 border-emerald-500 hover:-translate-y-1 hover:shadow-xl">
         <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Pendapatan Hari Ini</p>
         <p class="text-3xl font-bold mt-2 text-emerald-600">Rp{{ formatPrice(stats.todayRevenue) }}</p>
       </div>

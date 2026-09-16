@@ -2,7 +2,7 @@
   <div class="space-y-6">
     <h1 class="text-3xl font-bold">Poin Reward Saya</h1>
     
-    <div class="card">
+    <div class="card hover:bg-white/55 dark:hover:bg-slate-800/55">
       <div class="text-center">
         <p class="text-slate-600 dark:text-slate-400 mb-2">Saldo Poin</p>
         <h2 class="text-5xl font-bold text-orange-600">{{ balance }}</h2>

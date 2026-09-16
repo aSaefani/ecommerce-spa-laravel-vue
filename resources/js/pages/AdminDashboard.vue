@@ -58,7 +58,7 @@
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-left text-sm">
-            <thead class="bg-slate-50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300">
+            <thead class="bg-white/20 dark:bg-slate-700/20 text-slate-600 dark:text-slate-300">
               <tr>
                 <th class="p-3">Order #</th>
                 <th class="p-3">Pelanggan</th>
@@ -67,7 +67,7 @@
                 <th class="p-3">Tanggal</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
+            <tbody class="divide-y divide-white/20 dark:divide-slate-700/50">
               <tr v-for="order in stats.recentOrders" :key="order.id">
                 <td class="p-3 font-mono font-medium">{{ order.order_number }}</td>
                 <td class="p-3">{{ order.user?.name || 'Guest' }}</td>
@@ -92,7 +92,7 @@
 
       <div class="card overflow-x-auto">
         <table class="w-full text-left text-sm">
-          <thead class="bg-slate-50 dark:bg-slate-700/50">
+            <thead class="bg-white/20 dark:bg-slate-700/20">
             <tr>
               <th class="p-3">Nama</th>
               <th class="p-3">Kategori</th>
@@ -148,7 +148,7 @@
       <h2 class="text-xl font-bold">Manajemen Pengguna</h2>
       <div class="card overflow-x-auto">
         <table class="w-full text-left text-sm">
-          <thead class="bg-slate-50 dark:bg-slate-700/50">
+            <thead class="bg-white/20 dark:bg-slate-700/20">
             <tr>
               <th class="p-3">Nama</th>
               <th class="p-3">Email</th>
@@ -186,7 +186,7 @@
       <h2 class="text-xl font-bold">Audit Trail Stok (Inventory Logs)</h2>
       <div class="card overflow-x-auto">
         <table class="w-full text-left text-sm">
-          <thead class="bg-slate-50 dark:bg-slate-700/50">
+            <thead class="bg-white/20 dark:bg-slate-700/20">
             <tr>
               <th class="p-3">Tanggal</th>
               <th class="p-3">Produk</th>

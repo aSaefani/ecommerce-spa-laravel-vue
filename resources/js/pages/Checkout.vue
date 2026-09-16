@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto">
+  <div class="max-w-4xl mx-auto glass-heavy rounded-3xl p-5 md:p-8">
     <!-- Progress Stepper -->
     <div class="mb-8 flex justify-between">
       <div v-for="(step, idx) in steps" :key="idx" class="flex-1 flex items-center">

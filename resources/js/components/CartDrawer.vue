@@ -5,9 +5,9 @@
     </Transition>
 
     <Transition name="slide-right">
-      <div v-if="isOpen" class="fixed right-0 top-0 h-full w-full md:w-96 bg-white dark:bg-slate-800 shadow-xl z-50 flex flex-col">
+      <div v-if="isOpen" class="fixed right-0 top-0 h-full w-full md:w-96 glass-heavy shadow-2xl z-50 flex flex-col backdrop-blur-3xl border-l border-white/30 dark:border-slate-700/50">
         <!-- Header -->
-        <div class="sticky top-0 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 p-6 flex justify-between items-center">
+        <div class="sticky top-0 bg-white/20 dark:bg-slate-900/20 border-b border-white/20 dark:border-slate-700/50 p-6 flex justify-between items-center backdrop-blur-md">
           <h2 class="text-2xl font-bold">Keranjang</h2>
           <button @click="close" class="text-slate-500 hover:text-slate-700 dark:hover:text-slate-300">
             <XMarkIcon class="w-6 h-6" />
@@ -75,7 +75,7 @@
         </div>
 
         <!-- Summary & Checkout -->
-        <div v-if="cartStore.items.length > 0" class="sticky bottom-0 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 p-6 space-y-4">
+        <div v-if="cartStore.items.length > 0" class="sticky bottom-0 bg-white/20 dark:bg-slate-900/20 border-t border-white/20 dark:border-slate-700/50 p-6 space-y-4 backdrop-blur-md">
           <div class="space-y-2 text-sm">
             <div class="flex justify-between">
               <span>Subtotal:</span>

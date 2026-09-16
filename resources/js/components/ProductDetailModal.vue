@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white dark:bg-slate-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-    <div class="sticky top-0 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 p-4 flex justify-between items-center">
+  <div class="glass-heavy rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-white/40 dark:border-slate-700/50">
+    <div class="sticky top-0 bg-white/30 dark:bg-slate-900/30 backdrop-blur-xl border-b border-white/20 dark:border-slate-700/50 p-5 flex justify-between items-center">
       <h2 class="text-2xl font-bold">{{ product.name }}</h2>
       <button @click="$emit('close')" class="text-slate-500 hover:text-slate-700">
         <XMarkIcon class="w-6 h-6" />

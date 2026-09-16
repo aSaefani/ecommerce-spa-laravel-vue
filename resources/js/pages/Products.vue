@@ -2,7 +2,7 @@
   <div class="grid md:grid-cols-4 gap-6">
     <!-- Sidebar Filter -->
     <div class="md:col-span-1">
-      <div class="card space-y-6 sticky top-20">
+      <div class="card glass-heavy space-y-6 sticky top-24 rounded-3xl">
         <!-- Search -->
         <div>
           <label class="block text-sm font-bold mb-2">Cari Produk</label>
@@ -111,7 +111,7 @@
         <div 
           v-for="product in filteredProducts" 
           :key="product.id"
-          class="card hover:shadow-xl transition-all duration-300 cursor-pointer group transform hover:-translate-y-1"
+          class="card hover:shadow-2xl hover:bg-white/55 dark:hover:bg-slate-800/55 transition-all duration-300 cursor-pointer group transform hover:-translate-y-2 border border-white/40 dark:border-slate-700/50"
           @click="openProductDetail(product)"
         >
           <!-- Image with Badge -->
