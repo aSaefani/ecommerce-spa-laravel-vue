@@ -23,6 +23,9 @@ WORKDIR /app
 # Copy application
 COPY . .
 
+# Set permissions for entrypoint
+RUN chmod +x entrypoint.sh
+
 # Install PHP dependencies
 RUN composer install --no-interaction --optimize-autoloader
 
@@ -34,4 +37,4 @@ RUN npm run build
 EXPOSE 8000
 
 # Start command
-CMD php artisan serve --host=0.0.0.0 --port=8000
+CMD ["./entrypoint.sh"]
